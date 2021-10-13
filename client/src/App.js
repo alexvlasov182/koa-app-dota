@@ -36,9 +36,6 @@ class App extends Component {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size='small' color='primary'>
-              Share
-            </Button>
             <Button size='small' color='primary' onClick={this.props.onClickLearn}>
               Learn More
             </Button>
