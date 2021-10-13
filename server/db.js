@@ -14,7 +14,7 @@ const Dota = db.define('dota', {
 });
 
 db.sync({ force: true }).then(() => {
-  data.forEach((dota) => Dota.create(dota));
+  data.forEach((dd0ml79lve1vs6) => Dota.create(dd0ml79lve1vs6));
 });
 
 module.exports = {
