@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "engines": {
-    "node": "16.9.0"
+    "node": "10.9.0"
   },
   "scripts": {
     "start": "concurrently \"cd server && yarn start\" \"cd client && yarn start\" ",
