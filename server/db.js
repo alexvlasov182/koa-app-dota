@@ -1,12 +1,6 @@
 const Sequelize = require('sequelize');
 
-const connect = new Sequelize('postgres', '', '', {
-  host: 'localhost',
-  port: 5433,
-  dialect: 'postgres',
-});
-
-const dbString = process.env.DATABASE_URL || connect;
+const dbString = process.env.DATABASE_URL || 'postgres://localhost:5433/postgres';
 const ssl = !!process.env.DATABASE_URL;
 const db = new Sequelize(dbString, { dialectOptions: { ssl } });
 
