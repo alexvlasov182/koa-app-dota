@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "16.9.0"
+  },
+  "scripts": {
+    "start": "concurrently \"cd server && yarn start\" \"cd client && yarn start\" ",
+    "build": "cd client && yarn build",
+    "install": "(cd server && yarn) && (cd client && yarn)",
+    "start:prod": "cd server && yarn start:prod",
+    "heroku-postbuild": "yarn build"
+  },
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
