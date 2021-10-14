@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className='background'>
-        <h1 className='title'>Best Heroes of the International 2021</h1>
+        <h1 className='title'>Best Heroes of the International</h1>
         <Card className='card' style={style.card}>
           <CardActionArea>
             <CardMedia style={style.media}>
@@ -37,7 +37,7 @@ class App extends Component {
           </CardActionArea>
           <CardActions>
             <Button size='small' color='primary' onClick={this.props.onClickLearn}>
-              Learn More
+              Next Hero
             </Button>
           </CardActions>
         </Card>
